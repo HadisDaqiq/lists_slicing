@@ -97,7 +97,7 @@ def last_five(input_list):
 
     """
 
-    return input_list[-5::1]
+    return input_list[-5::]
 
 
 def middle(input_list):
@@ -169,8 +169,7 @@ def replace_third_and_last(input_list):
     True
 
     """
-    input_list[-1] = 37
-    input_list[2] = 37
+    input_list[-1], input_list[2] = 37, 37
     
     return None
 
