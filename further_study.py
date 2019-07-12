@@ -101,8 +101,8 @@ def custom_insert(input_list, index, value):
 
     """
 
-    custom_insert[index:index] = value
-    
+    input_list[index:index] = [value]
+
 
 
 def custom_remove(input_list, value):
