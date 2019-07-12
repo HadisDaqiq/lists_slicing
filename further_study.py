@@ -166,9 +166,9 @@ def custom_index(input_list, value):
         1
 
     """
-
-    return 0
-
+    for i, item in enumerate(input_list):
+        if item == value:
+            return i
 
 def custom_count(input_list, value):
     """Return the number of times value appears in the list.
@@ -183,7 +183,13 @@ def custom_count(input_list, value):
 
     """
 
-    return 0
+    count = 0
+
+    for item in input_list:
+        if item == value:
+            count += 1
+
+    return count
 
 
 def custom_reverse(input_list):
@@ -201,8 +207,13 @@ def custom_reverse(input_list):
         True
 
     """
+    # new_list = []
 
-    pass
+    # for i, item in enumerate(input_list):
+    #     new_list += item
+    #     print(new_list)
+
+
 
 
 def custom_contains(input_list, value):
