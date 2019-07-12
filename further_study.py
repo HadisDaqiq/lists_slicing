@@ -149,7 +149,9 @@ def custom_pop(input_list):
 
     """
 
-    return None
+    deleted_item = input_list[-1]
+    del input_list[-1]
+    return deleted_item
 
 
 def custom_index(input_list, value):
